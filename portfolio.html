@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+      integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a class="logo header__logo link" href="" lang="en"
+          >Web<span class="logo--black-color">Studio</span></a
+        >
+        <div class="mob-menu js-menu-container" id="mobile-menu">
+          <nav class="header__navigation">
+            <ul class="navigation__list list">
+              <li class="navigation__item">
+                <a class="navigation__link link" href="./index.html">Студия</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link link current" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="contacts__wrap">
+            <ul class="contacts__list list">
+              <li class="contacts__item">
+                <a
+                  class="mail header__mail link"
+                  href="mailto:info@devstudio.com"
+                >
+                  <svg class="mail__icon" width="16" height="12">
+                    <use href="./images/icons.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="contacts__item">
+                <a class="phone header__phone link" href="tel:+380961111111">
+                  <svg class="phone__icon" width="10" height="16">
+                    <use href="./images/icons.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-menu-socials list">
+              <li class="mob-menu-social">
+                <a href="" class="mob-menu-social__link link"> instagram </a>
+              </li>
+              <li class="mob-menu-social">
+                <a href="" class="mob-menu-social__link link"> Twitter </a>
+              </li>
+              <li class="mob-menu-social">
+                <a href="" class="mob-menu-social__link link"> Facebook </a>
+              </li>
+              <li class="mob-menu-social">
+                <a href="" class="mob-menu-social__link link"> LinkedIn </a>
+              </li>
+            </ul>
+          </div>
+          <button type="button" class="close-menu-btn js-close-menu">
+            <svg class="close-menu__icon" width="19" height="19">
+              <use href="./images/icons.svg#icon-close-menu"></use>
+            </svg>
+          </button>
+        </div>
+        <button type="button" class="open-menu-btn js-open-menu">
+          <svg class="open-menu__icon" width="24" height="16">
+            <use href="./images/icons.svg#icon-mob-menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="our-works">
+        <h2 class="visually-hidden">Наши работы</h2>
+        <div class="container">
+          <ul class="our-works-buttons list">
+            <li class="our-works-buttons__item">
+              <button type="button" class="our-works__btn">Все</button>
+            </li>
+            <li class="our-works-buttons__item">
+              <button type="button" class="our-works__btn">Веб-сайты</button>
+            </li>
+            <li class="our-works-buttons__item">
+              <button type="button" class="our-works__btn">Приложения</button>
+            </li>
+            <li class="our-works-buttons__item">
+              <button type="button" class="our-works__btn">Дизайн</button>
+            </li>
+            <li class="our-works-buttons__item">
+              <button type="button" class="our-works__btn">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="gallery list">
+            <li class="card gallery__card">
+              <a href="" class="card__link link">
+                <div class="card__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/laptop-img-desk-1x-min.jpg 1x,
+                        ./images/laptop-img-desk-2x-min.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/laptop-img-tab-1x-min.jpg 1x,
+                        ./images/laptop-img-tab-2x-min.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/laptop-img-mob-1x-min.jpg 1x,
+                        ./images/laptop-img-mob-2x-min.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      src="./images/laptop-img-desk-1x-min.jpg"
+                      alt="ноутбук"
+                    />
+                  </picture>
+                  <p class="card__text">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+                <div class="card__discription">
+                  <h3 class="card__title">Технокряк</h3>
+                  <p class="card__kind">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="card gallery__card">
+              <a href="" class="link">
+                <div class="card__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/basketball-img-desk-1x-min.jpg 1x,
+                        ./images/basketball-img-desk-2x-min.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/basketball-img-tab-1x-min.jpg 1x,
+                        ./images/basketball-img-tab-2x-min.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/basketball-img-mob-1x-min.jpg 1x,
+                        ./images/basketball-img-mob-2x-min.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      src="./images/basketball-img-desk-1x-min.jpg"
+                      alt="баскетболисты"
+                    />
+                  </picture>
+                  <p class="card__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit non fugiat libero ducimus hic quam quasi rerum fuga
+                    id? Soluta, sunt. Aspernatur obcaecati cumque, non
+                    dignissimos eius officiis alias placeat?
+                  </p>
+                </div>
+                <div class="card__discription">
+                  <h3 class="card__title">
+                    Постер
+                    <span lang="en" class="card__title"
+                      >New Orlean vs Golden Star</span
+                    >
+                  </h3>
+                  <p class="card__kind">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="card gallery__card">
+              <a href="" class="link">
+                <div class="card__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/fish-img-desk-1x-min.jpg 1x,
+                        ./images/fish-img-desk-2x-min.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/fish-img-tab-1x-min.jpg 1x,
+                        ./images/fish-img-tab-2x-min.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/fish-img-mob-1x-min.jpg 1x,
+                        ./images/fish-img-mob-2x-min.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      src="./images/fish-img-desk-1x-min.jpg"
+                      alt="логотип ресторана"
+                    />
+                  </picture>
+                  <p class="card__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit non fugiat libero ducimus hic quam quasi rerum fuga
+                    id? Soluta, sunt. Aspernatur obcaecati cumque, non
+                    dignissimos eius officiis alias placeat?
+                  </p>
+                </div>
+                <div class="card__discription">
+                  <h3 class="card__title">
+                    Ресторан
+                    <span lang="en" class="card__title">Seafood</span>
+                  </h3>
+                  <p class="card__kind">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="card gallery__card">
+              <a href="" class="link">
+                <div class="card__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/headphones-img-desk-1x-min.jpg 1x,
+                        ./images/headphones-img-desk-2x-min.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/headphones-img-tab-1x-min.jpg 1x,
+                        ./images/headphones-img-tab-2x-min.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/headphones-img-mob-1x-min.jpg 1x,
+                        ./images/headphones-img-mob-2x-min.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      src="./images/headphones-img-desk-1x-min.jpg"
+                      alt="наушники"
+                    />
+                  </picture>
+                  <p class="card__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit non fugiat libero ducimus hic quam quasi rerum fuga
+                    id? Soluta, sunt. Aspernatur obcaecati cumque, non
+                    dignissimos eius officiis alias placeat?
+                  </p>
+                </div>
+                <div class="card__discription">
+                  <h3 class="card__title">
+                    Проект<span lang="en" class="card__title"> Prime</span>
+                  </h3>
+                  <p class="card__kind">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="card gallery__card">
+              <a href="" class="link">
+                <div class="card__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/boxes-img-desk-1x-min.jpg 1x,
+                        ./images/boxes-img-desk-2x-min.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/boxes-img-tab-1x-min.jpg 1x,
+                        ./images/boxes-img-tab-2x-min.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/boxes-img-mob-1x-min.jpg 1x,
+                        ./images/boxes-img-mob-2x-min.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      src="./images/boxes-img-desk-1x-min.jpg"
+                      alt="коробки"
+                    />
+                  </picture>
+                  <p class="card__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit non fugiat libero ducimus hic quam quasi rerum fuga
+                    id? Soluta, sunt. Aspernatur obcaecati cumque, non
+                    dignissimos eius officiis alias placeat?
+                  </p>
+                </div>
+                <div class="card__discription">
+                  <h3 class="card__title">
+                    Проект<span lang="en" class="card__title"> Boxes</span>
+                  </h3>
+                  <p class="card__kind">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="card gallery__card">
+              <a href="" class="link">
+                <div class="card__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/iMac-img-desk-1x-min.jpg 1x,
+                        ./images/iMac-img-desk-2x-min.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/iMac-img-tab-1x-min.jpg 1x,
+                        ./images/iMac-img-tab-2x-min.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/iMac-img-mob-1x-min.jpg 1x,
+                        ./images/iMac-img-mob-2x-min.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      src="./images/iMac-img-desk-1x-min.jpg"
+                      alt="моноблок"
+                    />
+                  </picture>
+                  <p class="card__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit non fugiat libero ducimus hic quam quasi rerum fuga
+                    id? Soluta, sunt. Aspernatur obcaecati cumque, non
+                    dignissimos eius officiis alias placeat?
+                  </p>
+                </div>
+                <div class="card__discription">
+                  <h3 class="card__title">
+                    <span lang="en" class="card__title"
+                      >Inspiration has no Borders</span
+                    >
+                  </h3>
+                  <p class="card__kind">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="card gallery__card">
+              <a href="" class="link">
+                <div class="card__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/open-book-img-desk-1x-min.jpg 1x,
+                        ./images/open-book-img-desk-2x-min.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/open-book-img-tab-1x-min.jpg 1x,
+                        ./images/open-book-img-tab-2x-min.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/open-book-img-mob-1x-min.jpg 1x,
+                        ./images/open-book-img-mob-2x-min.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      src="./images/open-book-img-desk-1x-min.jpg"
+                      alt="открытая книга"
+                    />
+                  </picture>
+                  <p class="card__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit non fugiat libero ducimus hic quam quasi rerum fuga
+                    id? Soluta, sunt. Aspernatur obcaecati cumque, non
+                    dignissimos eius officiis alias placeat?
+                  </p>
+                </div>
+                <div class="card__discription">
+                  <h3 class="card__title">
+                    Издание<span lang="en" class="card__title">
+                      Limited Edition</span
+                    >
+                  </h3>
+                  <p class="card__kind">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="card gallery__card">
+              <a href="" class="link">
+                <div class="card__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/tag-img-desk-1x-min.jpg 1x,
+                        ./images/tag-img-desk-2x-min.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tag-img-tab-1x-min.jpg 1x,
+                        ./images/tag-img-tab-2x-min.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tag-img-mob-1x-min.jpg 1x,
+                        ./images/tag-img-mob-2x-min.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/tag-img-desk-1x-min.jpg" alt="бирка" />
+                  </picture>
+                  <p class="card__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit non fugiat libero ducimus hic quam quasi rerum fuga
+                    id? Soluta, sunt. Aspernatur obcaecati cumque, non
+                    dignissimos eius officiis alias placeat?
+                  </p>
+                </div>
+                <div class="card__discription">
+                  <h3 class="card__title">
+                    Проект<span lang="en" class="card__title"> LAB</span>
+                  </h3>
+                  <p class="card__kind">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="card gallery__card">
+              <a href="" class="link">
+                <div class="card__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/MacBook-img-desk-1x-min.jpg 1x,
+                        ./images/MacBook-img-desk-2x-min.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/MacBook-img-tab-1x-min.jpg 1x,
+                        ./images/MacBook-img-tab-2x-min.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/MacBook-img-mob-1x-min.jpg 1x,
+                        ./images/MacBook-img-mob-2x-min.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      src="./images/MacBook-img-desk-1x-min.jpg"
+                      alt="ноутбук"
+                    />
+                  </picture>
+                  <p class="card__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit non fugiat libero ducimus hic quam quasi rerum fuga
+                    id? Soluta, sunt. Aspernatur obcaecati cumque, non
+                    dignissimos eius officiis alias placeat?
+                  </p>
+                </div>
+                <div class="card__discription">
+                  <h3 class="card__title">
+                    <span lang="en" class="card__title">Growing Business</span>
+                  </h3>
+                  <p class="card__kind">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container--desktop">
+        <div class="footer__container">
+          <div class="footer__wrap">
+            <a class="logo--small-size link" href="" lang="en"
+              >Web<span class="logo--white-color">Studio</span></a
+            >
+            <address class="adress footer__adress">
+              г. Киев, пр-т Леси Украинки, 26
+            </address>
+            <a
+              class="mail footer__mail mail--footer-style link"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+            <a
+              class="phone footer__phone phone--footer-style link"
+              href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </div>
+          <div class="footer__links">
+            <h3 class="footer__heading">Присоединяйтесь</h3>
+            <ul class="socials list">
+              <li class="social">
+                <a href="" class="social--background-grey social__link link">
+                  <svg class="social__icon--color-white" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social">
+                <a href="" class="social--background-grey social__link link">
+                  <svg class="social__icon--color-white" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social">
+                <a href="" class="social--background-grey social__link link">
+                  <svg class="social__icon--color-white" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social">
+                <a href="" class="social--background-grey social__link link">
+                  <svg class="social__icon--color-white" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <form action="#" class="subscribe footer__subscribe">
+          <label for="subscribe-email"
+            ><h3 class="footer__heading">Подпишитесь на рассылку</h3></label
+          >
+          <div class="subscribe__input">
+            <input
+              type="email"
+              name="subscribe-email"
+              id="subscribe-email"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="btn subscribe__btn">
+              Подписаться
+              <svg class="subscribe__icon-send" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

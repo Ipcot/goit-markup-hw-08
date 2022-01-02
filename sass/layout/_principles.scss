@@ -1,0 +1,74 @@
+.principles {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.principles__list {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.principles__li-container {
+  &::before {
+    display: flex;
+    content: "";
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--background-color-section);
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    & + & {
+      margin-left: 30px;
+    }
+  }
+}
+.antenna::before {
+  content: "";
+  background-image: url(../images/antenna.svg);
+}
+
+.clock::before {
+  content: "";
+  background-image: url(../images/clock.svg);
+}
+
+.astronaut::before {
+  content: "";
+  background-image: url(../images/astronaut.svg);
+}
+
+.diagram::before {
+  content: "";
+  background-image: url(../images/diagram.svg);
+}
+
+.principles__title {
+  margin-bottom: 10px;
+
+  @include font(Roboto, 700, 14px, 1.14, 0.03em);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.principles__text {
+  @include font(Roboto, 400, 14px, 1.71, 0.03em);
+
+  color: var(--main-text-color);
+}
