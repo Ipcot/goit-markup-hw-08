@@ -140,7 +140,6 @@ img {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--main-text-color);
-  color: var(--accent-color);
 }
 
 .modal-contacts__input-wrap {
