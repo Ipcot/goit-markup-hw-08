@@ -10,11 +10,14 @@
 
 .customers__heading {
   margin-bottom: 30px;
-
-  @include font(Roboto, 700, 36px, 1.17, 0.03em);
+  @include font(Roboto, 700, 28px, 1.18, 0.03em);
 
   text-align: center;
   color: var(--main-color);
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    @include font(Roboto, 700, 36px, 1.17, 0.03em);
+  }
 }
 
 .customers__list {

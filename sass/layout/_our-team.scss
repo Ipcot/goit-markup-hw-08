@@ -11,10 +11,14 @@
 .our-team__title {
   margin-bottom: 30px;
 
-  @include font(Roboto, 700, 36px, 1.17, 0.03em);
+  @include font(Roboto, 700, 28px, 1.18, 0.03em);
 
   text-align: center;
   color: var(--main-color);
+  @media screen and (min-width: 1200px) {
+    @include font(Roboto, 700, 36px, 1.17, 0.03em);
+    margin-bottom: 50px;
+  }
 }
 
 .our-team-cards {
@@ -48,7 +52,6 @@
     padding-bottom: 30px;
   }
 }
-
 
 .our-team-card__title {
   padding-top: 30px;

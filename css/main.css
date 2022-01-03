@@ -476,6 +476,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .navigation__link {
+    position: relative;
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -665,7 +666,7 @@ img {
     transition: transform var(--transition-duration-link) var(--timing-function-cubic-bezier);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .mob-menu {
     flex-direction: row;
     margin-left: 88px;
@@ -838,9 +839,13 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-align: center;
   text-transform: uppercase;
   color: var(--main-color);
+}
+@media screen and (max-width: 767px) {
+  .principles__title {
+    text-align: center;
+  }
 }
 
 .principles__text {
@@ -922,11 +927,21 @@ img {
   margin-bottom: 30px;
   font-family: Roboto;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--main-color);
+}
+@media screen and (min-width: 1200px) {
+  .our-team__title {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1034,11 +1049,21 @@ img {
   margin-bottom: 30px;
   font-family: Roboto;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--main-color);
+}
+@media screen and (min-width: 1200px) {
+  .customers__heading {
+    margin-bottom: 50px;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
 }
 
 .customers__list {
@@ -1138,8 +1163,8 @@ img {
 
 .footer__links {
   text-align: center;
-  padding-top: 60px;
   padding-bottom: 60px;
+  padding-top: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer__links {
@@ -1151,6 +1176,7 @@ img {
   .footer__links {
     margin-left: 70px;
     padding-top: 12px;
+    padding-bottom: 0;
   }
 }
 
@@ -1164,6 +1190,11 @@ img {
   text-align: center;
   text-transform: uppercase;
   color: var(--second-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .footer__heading {
+    text-align: left;
+  }
 }
 
 .social__icon--color-white {

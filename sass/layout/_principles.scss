@@ -62,9 +62,12 @@
   margin-bottom: 10px;
 
   @include font(Roboto, 700, 14px, 1.14, 0.03em);
-  text-align: center;
+
   text-transform: uppercase;
   color: var(--main-color);
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .principles__text {
